@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #434141;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    justify-content: center;
+    background-color: #efe3db;
+}
+
+#logo_h1{
+    color: rgb(22, 22, 22);
+}
+
+header{
+    justify-content: space-between;
+    display: flex;
+    margin: 2vh 0;
+}
+
+#logo{
+
+    width: 10vw;
+}
+
+.nav-bar{
+    list-style: none;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
+
+.nav-bar li{
+    padding: 20px 20px;
+    font-size: 22px;
+}
+
+.nav-bar li a:hover{
+    color: #FF8022;
+}
+
+.nav-bar li a{
+    font-weight: 700;
+    color: black;
+    transition: .4s;
+}
+
+.container{
+    justify-self: center;
+    width: 55vw;
+}
+
+.artigo-tdah{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+#secao-tdah{
+    background-color: #D7D7D7;
+    padding: 20px;
+}
+
+#img-tdah{
+    display: flex;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+#img-tdah img{
+    width: 25vw;
+}
+
+
+#titulo-tdah{
+    padding-bottom: 30px;
+    display: flex;
+    font-size: 32px;
+    text-align: left;
+    font-weight: 700;
+}
+
+#texto_tdah{
+    justify-content: center;
+    display: flex;
+    text-align: justify;
+    font-size: 16px;
+}
+
+#mitos{
+    margin: 40px;
+    border-radius: 20px;
+    color: #434141;
+}
+
+#secao-mitos{
+    text-align: justify;
+    justify-self: center;
+    width: 53vw;
+    border-radius: 15px;
+}
+
+.artigos-mitos{
+    padding: 20px;
+}
+
+#titulo-mitos{
+    font-size: 32px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    font-weight: bold;
+}
+
+.texto-mitos{
+    padding-bottom: 40px;
+}
+
+.texto-mitos p{
+    font-size: 16px;
+}
+
+.texto-mitos h3{
+    padding-bottom: 14px;
+    font-size: 20px;
+}
+
+#secao-adulto{
+    justify-content: left;
+    padding: 40px;
+    background-color: #D7D7D7;
+}
+
+#titulo-adulto{
+    font-size: 32px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    font-weight: bold;
+}
+
+
+#texto-adulto{
+    font-size: 16px;
+    width: 50vw;
+    margin: auto;
+}
+
+#secao-diagnostico{
+    width: 55vw;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+#titulo-diagnostico{
+    font-size: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    font-weight: bold;
+}
+
+#texto-diagnostico{
+    font-size: 16px;
+    width: 50vw;
+    margin: auto;
+}
+
+.span-diagnostico{
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+#secao-autoteste{
+    padding-top: 70px;
+    justify-self: center;
+}
+
+#botao-autoteste{
+    margin: auto;
+    padding: 20px 40px;
+    border-radius: 10px;
+    border:1px solid #FF8022;
+    background-color: #F9A150;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.voltar-topo{
+    position: fixed;
+    bottom: 2vh;
+    right: 1vw;
+
+    background-color: #dd5b33;
+    color: #EFE3DB;
+    text-decoration: none;
+
+    border: 1px solid #F9A150;
+    padding: 25px;
+    border-radius: 50px;
+    font-weight: 700;
+
+    scroll-behavior: smooth;
+}
+
+.voltar-topo:hover{
+    padding: 40px;
+    transition: 1s;
+}

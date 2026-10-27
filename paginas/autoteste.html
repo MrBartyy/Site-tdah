@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style/autoteste.css" />
+    <link rel="stylesheet" href="/style/navbar.css" />
+
+    <title>Faça o Autoteste</title>
+  </head>
+  <body>
+    <header class="col-md-8 offset-md-2">
+      <h1 id="logo_h1">
+        <img src="../images/Logo_TDAH.png" alt="logo_projetoTDAH" id="logo" />
+      </h1>
+      <div>
+        <ul class="nav-bar">
+          <li><a href="#secao-tdah">O que é?</a></li>
+          <li><a href="#secao-mitos">Mitos</a></li>
+          <li><a href="#secao-adulto">Manifestação na vida adulta</a></li>
+          <li><a href="#secao-diagnostico">Quem e como diagnostica?</a></li>
+        </ul>
+      </div>
+    </header>
+    <hr />
+    <div class="advertencia">
+      <h2>Autoteste TDAH</h2>
+      <p>
+        O conteúdo e as perguntas apresentadas neste site têm caráter puramente
+        informativo e de autoconhecimento. Este teste não constitui um
+        diagnóstico clínico e não substitui a consulta com um profissional de
+        saúde qualificado. <br />Se você se identifica com os resultados ou
+        sente que isso impacta sua rotina, recomendamos buscar a orientação de
+        um psicólogo ou psiquiatra.
+      </p>
+    </div>
+    <div class="container-fluid form-bg">
+      <form>
+        <div class="row formulario">
+          <div class="col-md-3 offset-md-2">
+            <label>Nome Completo:</label>
+            <input
+              type="text"
+              class="form-control"
+              name="nome"
+              placeholder="Digite seu nome completo"
+            />
+          </div>
+          <div class="col-sd offset-md-0">
+            <label>Data de Nascimento:</label>
+            <input type="date" class="form-control" name="data-nascimento" />
+          </div>
+          <div class="col-md-2 offset-md-0">
+            <label>Número de Documento:</label>
+            <input
+              type="text"
+              class="form-control"
+              name="nome"
+              placeholder="Digite seu número de documento"
+            />
+          </div>
+          <div class="col-md-2">
+            <label>Tipo de Documento:</label>
+            <select class="form-control">
+              <option>CPF</option>
+              <option>RG</option>
+              <option>Carteira Nacional de Habilitação</option>
+            </select>
+          </div>
+        </div>
+        <div class="row formulario">
+          <div class="col-md-3 offset-md-2">
+            <label>Email:</label>
+            <input
+              type="text"
+              class="form-control"
+              name="email"
+              placeholder="Digite seu email"
+            />
+          </div>
+          <div class="col-md-2 offset-md-1">
+            <label>Telefone:</label>
+            <input type="text" class="form-control" name="telefone" placeholder="Ex: (12) 92345-6789"
+            />
+          </div>
+          <div class="col-md-3 offset-md-0">
+            <label class="radio-inline tel-opt">
+              <input type="radio" value="nacional" checked name="tipo" /><span
+                class="telefone-text"
+                >Telefone</span
+              >
+            </label>
+            <label class="radio-inline tel-opt">
+              <input type="radio" value="importado" checked name="tipo" /><span
+                class="telefone-text"
+                >Celular</span
+              >
+            </label>
+          </div>
+        </div>
+        <div class="row formulario">
+          <div class="col-md-3 offset-md-2 check-email">
+            <input type="checkbox" name="acessorios" value="bagageiro" /><span
+              class="email-text"
+              >Receber novidades por email</span
+            >
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="tutorial">
+      <h2>Como fazer o autoteste?</h2>
+      <p>
+        Leia atentamente as questões apresentadas no autoteste e responda de
+        acordo as opções que achar que se encaixe melhor
+      </p>
+      <p class="tip">
+        (Coloque o mouse sobre as questões para ver dicas e exemplos sobre a
+        questão)
+      </p>
+    </div>
+    <div>
+      <div class="col-md-8 offset-md-2">
+        <table>
+          <thead>
+            <tr id="titulo">
+              <th class="col-md-5 offset-md-0 opcao-questao">Questão</th>
+              <th class="col-md-2 offset-md-0 opcao-questao">
+                Muito frequentemente
+              </th>
+              <th class="col-md-2 offset-md-0 opcao-questao">Frequentemente</th>
+              <th class="col-md-2 offset-md-0 opcao-questao">Ás vezes</th>
+              <th class="col-md-2 offset-md-0 opcao-questao">Nunca</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th
+                class="questao"
+                title="Pense em como você lida com leituras longas ou relatórios repetitivos."
+              >
+                Com que frequência você tem dificuldade para manter a atenção em
+                tarefas longas ou monótonas no trabalho ou nos estudos?
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="0" name="q1" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="1" name="q1" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="2" name="q1" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="3" name="q1" />
+                </label>
+              </th>
+            </tr>
+            <tr>
+              <th
+                class="questao"
+                title="Considere se você costuma passar por cima de revisões importantes."
+              >
+                Com que frequência você comete erros por descuido em detalhes de
+                tarefas ou projetos?
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="0" name="q2" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="1" name="q2" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="2" name="q2" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="3" name="q2" />
+                </label>
+              </th>
+            </tr>
+            <tr>
+              <th
+                class="questao"
+                title="Avalie quantos projetos ou hobbies você iniciou e parou logo depois."
+              >
+                Você tem o hábito de deixar tarefas inacabadas após a novidade
+                inicial passar?
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="0" name="q3" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="1" name="q3" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="2" name="q3" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="3" name="q3" />
+                </label>
+              </th>
+            </tr>
+            <tr>
+              <th
+                class="questao"
+                title="Pense na sua facilidade ou dificuldade para cumprir prazos e organizar prioridades."
+              >
+                Com que frequência você tem dificuldade para organizar tarefas e
+                gerenciar seu tempo?
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="0" name="q4" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="1" name="q4" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="2" name="q4" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="3" name="q4" />
+                </label>
+              </th>
+            </tr>
+            <tr>
+              <th
+                class="questao"
+                title="Observe se você costuma empurrar tarefas complexas até o limite do prazo."
+              >
+                Com que frequência você evita ou reluta em se envolver em
+                tarefas que exigem esforço mental prolongado?
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="0" name="q5" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="1" name="q5" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="2" name="q5" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="3" name="q5" />
+                </label>
+              </th>
+            </tr>
+            <tr>
+              <th
+                class="questao"
+                title="Pense em quantas vezes no mês você procura por itens que usa todos os dias."
+              >
+                Com que frequência você perde objetos essenciais para o dia a
+                dia (como chaves, carteira, óculos ou celular)?
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="0" name="q6" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="1" name="q6" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="2" name="q6" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="3" name="q6" />
+                </label>
+              </th>
+            </tr>
+            <tr>
+              <th
+                class="questao"
+                title="Avalie se você consegue ficar sentado confortavelmente por longos períodos sem balançar pernas ou braços."
+              >
+                Com que frequência você se sente inquieto, como se estivesse
+                'com um motor ligado' ou com dificuldade para relaxar?
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="0" name="q7" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="1" name="q7" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="2" name="q7" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="3" name="q7" />
+                </label>
+              </th>
+            </tr>
+            <tr>
+              <th
+                class="questao"
+                title="Pense se as pessoas costumam reclamar que você termina as frases delas."
+              >
+                Com que frequência você fala excessivamente ou interrompe
+                conversas e atividades dos outros?
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="0" name="q8" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="1" name="q8" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="2" name="q8" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="3" name="q8" />
+                </label>
+              </th>
+            </tr>
+            <tr>
+              <th
+                class="questao"
+                title="Avalie o quanto a espera em filas de bancos ou trânsito afeta seu humor."
+              >
+                Com que frequência você tem dificuldade para esperar sua vez em
+                filas ou situações que exigem paciência?
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="0" name="q9" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="1" name="q9" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="2" name="q9" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="3" name="q9" />
+                </label>
+              </th>
+            </tr>
+            <tr>
+              <th
+                class="questao"
+                title="Pense em compras por impulso ou decisões drásticas tomadas sem reflexão."
+              >
+                Com que frequência você toma decisões precipitadas sem avaliar
+                totalmente os riscos envolvidos?
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="0" name="q10" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="1" name="q10" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="2" name="q10" />
+                </label>
+              </th>
+              <th>
+                <label class="radio-inline questao-opt">
+                  <input type="radio" value="3" name="q10" />
+                </label>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <div class="col-md-3 div-submit">
+          <a class="botao-submit">Finalizar autoteste</a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="div-footer">
+      <footer>
+        <h3 class="footer-h3">2026 Fatec Franca - DSM - Web-I</h3>
+        <p class="footer-paragrafo">Esse site foi desenvolvido por Bartholomeu Arruda Alves</p>
+      </footer>
+    </div>
+
+    <!---Inicio dos Scripts Boostrap-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
